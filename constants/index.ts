@@ -43,39 +43,39 @@ export const IdentificationTypes = [
 export const AdmissionsOfficers = [
   {
     image: '/assets/images/dr-green.png',
-    name: 'John Green',
+    name: 'Ahmed Firdews',
   },
   {
     image: '/assets/images/dr-cameron.png',
-    name: 'Leila Cameron',
+    name: 'Erzhigit Kasymbaev',
   },
   {
     image: '/assets/images/dr-livingston.png',
-    name: 'David Livingston',
+    name: 'Aizhan Kairatova',
   },
   {
-    image: '/assets/images/dr-peter.png',
-    name: 'Evan Peter',
+    image: '/assets/images/samagan.png',
+    name: 'Samagan Nurdinov',
   },
   {
     image: '/assets/images/dr-powell.png',
-    name: 'Jane Powell',
+    name: 'Mehmed Izol',
   },
   {
     image: '/assets/images/dr-remirez.png',
-    name: 'Alex Ramirez',
+    name: 'Saikal Dzhakypova',
   },
   {
     image: '/assets/images/dr-lee.png',
-    name: 'Jasmine Lee',
+    name: 'Meerim Beishebaevam',
   },
   {
     image: '/assets/images/dr-cruz.png',
-    name: 'Alyana Cruz',
+    name: 'Aiperi Kudaibergenova',
   },
   {
     image: '/assets/images/dr-sharma.png',
-    name: 'Hardik Sharma',
+    name: 'Asel Kadyrova',
   },
 ];
 

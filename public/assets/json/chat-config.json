@@ -1,8 +1,48 @@
 {
-  "system_prompt": "You are an admissions assistant chatbot for NAU's student scheduler. Always respond in a professional and friendly tone. Provide concise answers, and suggest scheduling options where possible. If you don't know an answer, say 'I will connect you with an admissions officer.'",
+  "system_prompt": "You are ShedulNA, an AI-powered admissions assistant chatbot for North American University (NAU). You help prospective students—especially international applicants—by answering questions about admissions, tuition, scholarships, housing, documents, and programs. Always respond in a friendly, professional, and respectful tone. Keep answers concise and clear. If a question is outside your scope or requires human review, say 'I will connect you with an admissions officer.' Appointments can be scheduled via this chat. Offer scheduling links when needed. If students ask about pricing, documents, program details, or deadlines, give accurate and helpful responses based on NAU's official information.",
+  
   "knowledge_base": [
-    "Appointments are available Monday-Friday, 9 AM to 5 PM.",
-    "Students can schedule appointments with admissions officers for inquiries about admission, scholarships, and campus tours.",
-    "Contact email: admissions@nau.edu, Phone: +1 (123) 456-7890"
+    "Appointments are available Monday through Friday, from 9 AM to 5 PM Central Time.",
+    "Students can schedule meetings for questions about admissions, scholarships, housing, campus life, tuition, English proficiency, and online programs.",
+    "Application portal: https://apply.na.edu | Admissions Website: https://www.na.edu/admissions",
+    "Admissions Contact: admissions@na.edu | Phone: +1 (832) 230-5120 | WhatsApp: +1 (713) 815-1784 (Undergrad), +1 (832) 859-1449 (Graduate)",
+    
+    "📌 Undergraduate Required Documents: High school transcript, diploma/certificate, passport, proof of English proficiency (TOEFL, IELTS, Duolingo), $75 application fee, and $150–$175 evaluation fee. Optional: SAT or national exam scores for scholarships.",
+    "📌 Graduate Required Documents: Passport, statement of purpose, CV, 2 letters of recommendation, official transcript + U.S. credential evaluation, English proficiency score, $75 application fee, and a distance education proficiency test.",
+    "Applicants submit all required documents via the application portal dashboard. Payment links for fees are sent to the registered email once documents are uploaded.",
+    
+    "📝 Application Fee: $75 (non-refundable). Covers application processing and document verification.",
+    "📝 Evaluation Fee (for international applicants): $150 if graduated, $175 if still in high school (because a second final evaluation is needed).",
+    
+    "🎓 English Proficiency Requirements: TOEFL iBT minimum 79, IELTS 6.5, Duolingo 105. Lower scores may qualify for conditional acceptance. If the applicant studied in an English-medium high school, a confirmation letter can waive the test.",
+    
+    "📚 Undergraduate Programs include: Computer Science, Business Administration, Education, Criminal Justice, Interdisciplinary Studies, and more. Specializations include Software Engineering, Networking, International Business, and Education concentrations.",
+    "📚 Graduate Programs include: MBA (with concentrations in Business Analytics, Healthcare, Leadership, and Operations), M.S. in Computer Science (with tracks in Cybersecurity, Data Analytics, Networking, and Software Engineering), M.Ed. in Curriculum & Instruction, Educational Leadership, and School Counseling (30-credit and 48-credit tracks).",
+    
+    "💻 Online Programs: Available for both bachelor's and master's degrees. Students can begin online and transfer to on-campus. Tuition is $2,800/semester for undergraduate online and $500 per course for graduate online. Fully credit-bearing and transferable. Good for starting studies early or improving visa chances.",
+    "✅ Online study benefits: Keeps momentum, builds U.S. credits, helps with visa re-application, shows academic commitment, and offers discounted tuition.",
+    
+    "💰 Undergraduate Tuition: $27,000/year for international students (before scholarships). Most students receive merit-based scholarships that reduce tuition significantly.",
+    "💰 Graduate Tuition (International): $658/credit hour (MBA), $732/credit (Computer Science), $511/credit (M.Ed.). No semester fee. Programs typically require 30 credit hours.",
+    
+    "🎓 Undergraduate International Scholarships: Up to $22,000/year based on GPA, SAT/ACT, or top percentile in national exams. Example: Top 3% = $22k scholarship, Top 5% = $20k.",
+    "🎓 Undergraduate Transfer Scholarships: GPA 3.76–4.00 = $22,000/year; 3.00–3.75 = $20,000/year; 2.50–2.99 = $17,000; 2.25–2.49 = $14,000; 2.00–2.24 = $12,000.",
+    "🎓 U.S. Residents may qualify for Stallion Free Tuition Program, covering full tuition and fees for Pell Grant-eligible students. FAFSA code: 041795.",
+    
+    "🏠 Housing Options: On-campus dorms and off-campus apartments/hotels available. Prices range from $2,090 to $3,600 per semester. Housing deposit: $150. Meal plans: 10-meal ($1,430), 14-meal ($2,090), 19-meal ($2,750).",
+    
+    "📅 Deadlines (Fall 2025): Application due July 15, 2025 | Enrollment documents and housing application due July 31, 2025 | Move-in: August 13 | Classes start: August 20",
+    
+    "📄 For transfer students: Up to 60 credits accepted depending on program. Transfer GPA scholarships range from $12,000 to $22,000 per year for F-1 students. Contact: transfer@na.edu",
+    
+    "🧾 Students receive confirmation emails, Zoom links, and reminders via WhatsApp and email for all booked appointments.",
+    
+    "🌐 NAU is located at 11929 W Airport Blvd, Stafford, TX 77477. It is a private non-profit university with a focus on global diversity, student-centered learning, and affordable U.S. education.",
+    
+    "📈 NAU's graduate programs are ranked among the top online programs in Computer Science and Business by TechGuide and Forbes.",
+    
+    "📑 I-20 and visa support provided for international students. Once accepted, students upload visa documents and receive the I-20 for F-1 status processing.",
+    
+    "🛑 If the question is not covered here, reply with: 'I will connect you with an admissions officer.'"
   ]
 }

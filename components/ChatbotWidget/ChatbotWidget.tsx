@@ -3,6 +3,10 @@
 import { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { Send, Loader2, X } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/github.css"; // You can switch this theme
 
 import { ChatbotButton } from "./ChatbotButton";
 import { TypingCursor } from "./TypingCursor";
@@ -15,9 +19,9 @@ interface ChatForm {
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [messages, setMessages] = useState<{ role: "user" | "assistant"; content: string }[]>([
-    { role: "assistant", content: "Hi! How can I help you with scheduling?" },
-  ]);
+  const [messages, setMessages] = useState<
+    { role: "user" | "assistant"; content: string }[]
+  >([{ role: "assistant", content: "Hi! How can I help you with scheduling?" }]);
 
   const { register, handleSubmit, reset } = useForm<ChatForm>();
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -100,15 +104,25 @@ export default function ChatbotWidget() {
                     : "bg-gray-100"
                 }`}
               >
-                {msg.content}
+                {msg.role === "assistant" ? (
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    rehypePlugins={[rehypeHighlight]}
+                  >
+                    {msg.content}
+                  </ReactMarkdown>
+                ) : (
+                  msg.content
+                )}
                 {isLoading && i === messages.length - 1 && <TypingCursor />}
               </div>
             ))}
-            {isLoading && messages[messages.length - 1].role !== "assistant" && (
-              <div className="p-2 bg-gray-100 rounded-md text-gray-600 text-sm flex items-center gap-2">
-                Assistant is typing <TypingDots />
-              </div>
-            )}
+            {isLoading &&
+              messages[messages.length - 1].role !== "assistant" && (
+                <div className="p-2 bg-gray-100 rounded-md text-gray-600 text-sm flex items-center gap-2">
+                  Assistant is typing <TypingDots />
+                </div>
+              )}
             <div ref={messagesEndRef} />
           </div>
 
@@ -128,7 +142,11 @@ export default function ChatbotWidget() {
               className="bg-green-500 text-white px-4 py-2 rounded flex items-center justify-center disabled:opacity-50"
               disabled={isLoading}
             >
-              {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send size={18} />}
+              {isLoading ? (
+                <Loader2 className="h-4 w-4 animate-spin" />
+              ) : (
+                <Send size={18} />
+              )}
             </button>
           </form>
         </div>
